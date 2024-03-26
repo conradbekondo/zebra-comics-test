@@ -1,0 +1,42 @@
+<div class="fixed top-0 left-0 w-full h-12 flex justify-between items-center px-3 bg-black z-[9999]">
+  <a routerLink="/">
+    <img src="/assets/images/banner-logo.svg" />
+  </a>
+  <img src="https://picsum.photos/200" alt="profile" class="rounded-full" width="28">
+</div>
+<main class="row-span-11 landscape:row-span-10 pt-12 overflow-auto">
+  <router-outlet></router-outlet>
+</main>
+<ul class="row-start-12 landscape:row-start-11 landscape:row-span-2 flex justify-evenly items-center backdrop-blur-md bg-black"
+  style="font-size: 13px">
+  <li>
+    <a routerLink="/for-you" routerLinkActive="active-route" class="flex flex-col gap-1 items-center text-gray-400">
+      <i class="fa-solid fa-home"></i>
+      <span>For You</span>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/originals" routerLinkActive="active-route" class="flex flex-col gap-1 items-center text-gray-500">
+      <i class="fa-solid fa-star"></i>
+      <span>Originals</span>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/creators" routerLinkActive="active-route" class="flex flex-col gap-1 items-center text-gray-500">
+      <i class="fa-solid fa-paintbrush"></i>
+      <span>Creators</span>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/library" routerLinkActive="active-route" class="flex flex-col gap-1 items-center text-gray-500">
+      <i class="fa-solid fa-bookmark"></i>
+      <span>Library</span>
+    </a>
+  </li>
+  <li>
+    <a routerLink="/premium" routerLinkActive="active-route" class="flex flex-col gap-1 items-center text-gray-500">
+      <i class="fa-solid fa-certificate"></i>
+      <span>Premium</span>
+    </a>
+  </li>
+</ul>

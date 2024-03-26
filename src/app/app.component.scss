@@ -1,0 +1,7 @@
+:host {
+    @apply w-full h-full grid grid-rows-12 grid-cols-1;
+}
+
+.active-route {
+    @apply text-white;
+}
